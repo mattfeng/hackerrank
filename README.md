@@ -5,3 +5,5 @@
 ## `/algorithms/`
 
 ## `/cpp/`
+
+## `/haskell/`
