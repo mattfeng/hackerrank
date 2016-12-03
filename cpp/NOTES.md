@@ -92,5 +92,12 @@ int *p = &var;
 
 ```cpp
 string array[3] = {"a", "b", "c"};
+int int_arr[3] = new int[3]; // allocates an array of size 3 on the HEAP
 ```
 
+
+## Classes
+
+## Virtual Functions
+
+`virtual` keyword gives **late binding**, while without the keyword gives **early binding**.
