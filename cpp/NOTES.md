@@ -97,6 +97,32 @@ int int_arr[3] = new int[3]; // allocates an array of size 3 on the HEAP
 
 
 ## Classes
+```cpp
+class Person {
+// default access specifier is `private`	
+	string name;
+	int age;
+
+public:
+	virtual void getdata(); // determine which function to call during runtime
+	virtual void putdata();
+};
+
+class Professor: public Person {
+
+};
+
+class Student: public Person {
+
+};
+
+void Person::getdata() {
+	cin >> name >> age;
+}
+
+... snip ...
+
+```
 
 ## Virtual Functions
 
