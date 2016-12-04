@@ -12,6 +12,33 @@
 using namespace std;
 ```
 
+## Some More Libraries
+
+```cpp
+#include <map>
+#include <set>
+#include <list>
+#include <cmath>
+#include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
+#include <cstdio>
+#include <limits>
+#include <vector>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+#include <fstream>
+#include <numeric>
+#include <sstream>
+#include <iostream>
+#include <algorithm>
+#include <unordered_map>
+```
+
 ## C++ Data Types
 
 <table>
@@ -28,13 +55,13 @@ using namespace std;
 	</tr>
 
 	<tr>
-		<td>long</td>
+		<td>long / long int</td>
 		<td>"%ld"</td>
 		<td>32 bit integer (same as int for modern systems)</td>
 	</tr>
 
 	<tr>
-		<td>long long</td>
+		<td>long long / long long int</td>
 		<td>"%lld"</td>
 		<td>64 bit integer</td>
 	</tr>
@@ -127,3 +154,44 @@ void Person::getdata() {
 ## Virtual Functions
 
 `virtual` keyword gives **late binding**, while without the keyword gives **early binding**.
+
+## Strings
+
+```cpp
+string s = "hello this is a string from c plus plus.";
+/* 
+ * Substrings:
+
+	s.substr(6); 	OR
+	string(s.begin() + 6, s.end());
+*/
+```
+
+## Standard Library
+
+### `vector`
+
+```cpp
+#include <vector>
+#include <algorithm>
+
+vector<int> v; // create an empty vector of `int`
+
+int size = v.size(); // size of vector
+
+v.push_back(x); // push integer into a vector, at the end
+
+v.pop_back(x); // pop the LAST element from the vector
+
+sort(v.begin(), v.end()); // sorts all elements in the vector
+
+v.at(index); // retrieve value at `index`
+
+```
+
+## `StringStream`
+
+```cpp
+#include <sstream>
+```
+
